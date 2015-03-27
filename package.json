@@ -1,0 +1,27 @@
+{
+  "name": "skip-link-focus",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Brady Vercher",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "accessibility"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cedaro/skip-link-focus.git"
+  },
+  "main": "skip-link-focus.js",
+  "devDependencies": {
+    "jshint": "~2.6.3",
+    "uglify-js": "~2.4.17"
+  },
+  "scripts": {
+    "build": "uglifyjs skip-link-focus.js --mangle --comments -o skip-link-focus.min.js",
+    "lint": "jshint skip-link-focus.js"
+  },
+  "files": [
+    "skip-link-focus.js",
+    "skip-link-focus.min.js"
+  ]
+}

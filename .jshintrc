@@ -1,0 +1,22 @@
+{
+  "boss": true,
+  "browser": true,
+  "curly": true,
+  "eqeqeq": true,
+  "eqnull": true,
+  "expr": true,
+  "immed": true,
+  "latedef": true,
+  "newcap": false,
+  "noarg": true,
+  "quotmark": "single",
+  "smarttabs": true,
+  "sub": true,
+  "trailing": true,
+  "undef": true,
+  "unused": "vars",
+  "globals": {
+    "define": false,
+    "module": false
+  }
+}
