@@ -1,7 +1,7 @@
 {
   "name": "skip-link-focus",
   "version": "0.1.0",
-  "description": "",
+  "description": "Make 'skip to content' links more accessible.",
   "author": "Brady Vercher",
   "license": "BSD-3-Clause",
   "keywords": [
