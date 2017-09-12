@@ -26,7 +26,7 @@
 	'use strict';
 
 	function init() {
-		if ( window && /webkit|opera|msie/i.test( window.navigator.userAgent ) && window.addEventListener ) {
+		if ( window && /(trident|msie)/i.test( navigator.userAgent ) && window.addEventListener ) {
 			var i,
 				skipLinks = window.document.querySelectorAll( '.skip-link' );
 
