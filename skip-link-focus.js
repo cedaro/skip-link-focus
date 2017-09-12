@@ -26,7 +26,7 @@
 	'use strict';
 
 	function init( skipLinkSelector ) {
-		if ( window && /(webkit|opera|msie|trident)/i.test( navigator.userAgent ) && window.addEventListener ) {
+		if ( window && /webkit|opera|msie|trident/i.test( navigator.userAgent ) && window.addEventListener ) {
 			var i,
 				skipLinks = window.document.querySelectorAll( skipLinkSelector || '.skip-link' );
 
@@ -38,7 +38,8 @@
 			for ( i = 0; i < skipLinks.length; ++i ) {
 				skipLinks[ i ].addEventListener( 'click', skipLinkClickHandler );
 			}
-			 // Handle initial hash.
+			
+			// Handle initial hash.
 			if ( location.hash && location.hash.substring( 1 ) ) {
 				skipToElement( location.hash.substring( 1 ) );
 			}
