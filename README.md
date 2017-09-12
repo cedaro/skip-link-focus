@@ -17,6 +17,8 @@ Or if you're using Browserify:
 require( 'skip-link-focus' ).init();
 ```
 
+`init()` takes an optional argument to specify a DOM selector where skip links are to be found. This is used to handle an edge case where, if a hash is present in the URL on initial load (or refresh), clicking the skip link wouldn't actually fire a hashchange event, making the skip link unusable. Usage example: `init('.generic-skip-link-class')`. Defaults to `.skip-link`.
+
 ## Background
 
 Makes "skip to content" links work correctly in IE9, Chrome, and Opera to improve accessibility.
@@ -34,3 +36,7 @@ This module is based on the *_s* implementation with the following enhancements:
 
 Additional reading on skip link accessibility:
 https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/
+
+## Testing
+
+To manually test the script in a browser of your choice, run `npm test` and head to `http://localhost:5000/test/`.
