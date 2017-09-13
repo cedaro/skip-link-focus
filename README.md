@@ -17,7 +17,8 @@ Or if you're using Browserify:
 require( 'skip-link-focus' ).init();
 ```
 
-`init()` takes an optional argument to specify a DOM selector where skip links are to be found. This is used to handle an edge case where, if a hash is present in the URL on initial load (or refresh), clicking the skip link wouldn't actually fire a hashchange event, making the skip link unusable. Usage example: `init('.generic-skip-link-class')`. Defaults to `.skip-link`.
+`init()` takes an optional `options` argument:
+- `options.selector` {String} Specifies a DOM selector where skip links are to be found. This is used to handle an edge case where, if a hash is present in the URL on initial load (or refresh), clicking the skip link wouldn't actually fire a hashchange event, making the skip link unusable. Usage example: `init( { selector: '.generic-skip-link-class' } )`. Defaults to `.skip-link`.
 
 ## Background
 

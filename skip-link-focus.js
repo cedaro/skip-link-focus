@@ -25,10 +25,13 @@
 }( this, function() {
 	'use strict';
 
-	function init( skipLinkSelector ) {
+	function init( options ) {
+		options = options || {};
+		options.selector = options.selector || '.skip-link';
+
 		if ( window && /webkit|opera|msie|trident/i.test( navigator.userAgent ) && window.addEventListener ) {
 			var i,
-				skipLinks = window.document.querySelectorAll( skipLinkSelector || '.skip-link' );
+				skipLinks = window.document.querySelectorAll( options.selector );
 
 			window.addEventListener( 'hashchange', function() {
 				skipToElement( location.hash.substring( 1 ) );
