@@ -1,6 +1,6 @@
 {
   "name": "skip-link-focus",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Make 'skip to content' links more accessible.",
   "license": "BSD-3-Clause",
   "main": "skip-link-focus.js",

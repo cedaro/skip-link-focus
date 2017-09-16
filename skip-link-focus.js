@@ -1,5 +1,5 @@
 /**
- * Skip Link Focus v0.1.0
+ * Skip Link Focus v1.0.0
  * https://github.com/cedaro/skip-link-focus
  *
  * @copyright Modifications Copyright (c) 2015 Cedaro, LLC
@@ -41,7 +41,7 @@
 			for ( i = 0; i < skipLinks.length; ++i ) {
 				skipLinks[ i ].addEventListener( 'click', skipLinkClickHandler );
 			}
-			
+
 			// Handle initial hash.
 			if ( location.hash && location.hash.substring( 1 ) ) {
 				skipToElement( location.hash.substring( 1 ) );
