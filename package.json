@@ -13,9 +13,9 @@
   },
   "main": "skip-link-focus.js",
   "devDependencies": {
-    "jshint": "^2.9.5",
-    "serve": "^6.1.0",
-    "uglify-js": "^3.1.0"
+    "jshint": "^2.10.2",
+    "serve": "^11.1.0",
+    "uglify-js": "^3.6.0"
   },
   "scripts": {
     "build": "uglifyjs skip-link-focus.js --mangle --comments -o skip-link-focus.min.js",
