@@ -29,7 +29,7 @@
 		options = options || {};
 		options.selector = options.selector || '.skip-link';
 
-		if ( window && /webkit|opera|msie|trident/i.test( navigator.userAgent ) && window.addEventListener ) {
+		if ( window && /webkit|opera|msie|mozilla|trident/i.test( navigator.userAgent ) && window.addEventListener ) {
 			var i,
 				skipLinks = window.document.querySelectorAll( options.selector );
 
